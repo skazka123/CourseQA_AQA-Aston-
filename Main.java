@@ -1,7 +1,4 @@
-//Делала в онлайн компиляторе, так как не успела во время установить программу на пк
-import java.util.Scanner;
-
-public class Main {
+public class Lesson_2 {
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
