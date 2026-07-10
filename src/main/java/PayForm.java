@@ -69,7 +69,7 @@ public class PayForm {
         buttonSelect.click();
 
         WebElement option = wait.until(ExpectedConditions.elementToBeClickable(
-                By.xpath("//button[.//span[normalize-space()='" + optionText + "']]")));
+                By.xpath("//p[@class='select__option'][contains(text(),'" + optionText + "')]")));
         option.click();
     }
 
