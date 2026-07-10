@@ -109,7 +109,7 @@ public class TestPayForm {
         payForm.putConnectionSum("100");
         payForm.clickButtonContinue();
         payForm.goToPayFrame();
-        WebElement bepaidDiv = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("div[class*='bepaid']")));
-        assertTrue(bepaidDiv.isDisplayed());
+        WebElement elementPayFrame = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='header__close-button']")));
+        assertTrue(elementPayFrame.isDisplayed());
     }
 }
